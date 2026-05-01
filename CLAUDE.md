@@ -4,12 +4,32 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Pipeline Tycoon is in initial setup — no tech stack or source code exists yet. The repository contains only a README stub.
+Pipeline Tycoon is a CI/CD puzzle game built with Next.js 16 + TypeScript + Tailwind CSS.
 
-When the stack is chosen and scaffolded, update this file with:
-- Build, dev, test, and lint commands
-- Architecture overview (entry points, key modules, game loop structure)
-- Any conventions or constraints specific to this project
+## Commands
+
+| Task | Command |
+|------|---------|
+| Dev server | `npm run dev` |
+| Production build | `npm run build` |
+| Run production build | `npm start` |
+| Lint | `npm run lint` |
+
+## Architecture
+
+```
+src/
+  app/
+    page.tsx        ← landing page (route: /)
+    layout.tsx      ← root layout, wraps all pages
+    globals.css     ← global Tailwind styles
+    play/
+      page.tsx      ← game canvas (route: /play) — not created yet
+```
+
+Next.js App Router: file location = route. A file at `src/app/play/page.tsx` is automatically the `/play` URL — no router config needed.
+
+**Note:** `AGENTS.md` at the root is a Next.js-generated file warning that Next.js 16 has breaking API changes from prior versions. Read it before touching Next.js internals.
 
 ---
 
