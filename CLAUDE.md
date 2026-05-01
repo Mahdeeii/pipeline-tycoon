@@ -35,43 +35,70 @@ Next.js App Router: file location = route. A file at `src/app/play/page.tsx` is 
 
 ## About Me (the Developer)
 
-I'm a junior DevOps engineer learning frontend development.
-- Beginner with React/Next.js
-- Comfortable with terminal/CLI
-- Goal: Learn while building Pipeline Tycoon
-- I want to UNDERSTAND every line of code, not just ship features
+I'm a DevOps engineer with strong terminal/CLI/infra skills, learning frontend dev as a side project.
+
+What this means for you:
+- I think in pipelines, deployments, configs, environments, automation
+- I understand: git, SSH, package managers, build systems, networking, services, YAML, env vars
+- I do NOT need explanations of: variables, loops, functions, conditionals, basic CLI, JSON, REST
+- I am a beginner at: React patterns, JSX, hooks, frontend state management, CSS/Tailwind
 
 ---
 
-## How to Help Me
+## How to Help Me — SPEED MODE
 
-### When I ask you to write code:
-1. ALWAYS explain WHY before HOW — what concept are we using?
-2. Use TypeScript with explicit types (never `any`)
-3. Add comments for non-obvious lines
-4. Keep components under 100 lines if possible
-5. After writing, give me a 2-3 sentence "what just happened" summary
-6. Ask me to confirm I understand before moving on
+### Default behavior: SHIP, don't explain.
+- Just write the code. Move fast. Don't ask if I understand.
+- Don't ask for confirmation between steps unless something is irreversible.
+- Don't explain general programming concepts (loops, arrays, .map(), basic React).
+- Don't quiz me. Don't wait for approval. Just do the work.
 
-### When I ask you to fix a bug:
-1. First EXPLAIN the bug in plain English
-2. THEN propose the fix
-3. Show me how to test that the fix works
-4. Suggest how to prevent this category of bug
+### EXCEPTION: Explain ONLY when it's DevOps-relevant.
+If a concept connects to DevOps/infra/automation, give me ONE compact paragraph (2-3 sentences max) AFTER the code, framed through a DevOps analogy:
 
-### Code style rules:
-- Functional components only (no classes)
-- Named exports preferred over default exports
-- File names: kebab-case (e.g., `pipeline-canvas.tsx`)
-- Early returns over nested if/else
-- Always handle loading and error states
+Examples of WORTH explaining:
+- Build process → "next build is your CI build step. Outputs go to .next/, like a Docker image artifact."
+- Environment variables → "Next.js reads .env.local at build time, like Helm values."
+- Server vs Client components → "Server components render once on the server, like SSR templates. Client components hydrate in the browser, like a SPA."
+- Deployment pipelines, CDN behavior, caching, build artifacts, env separation
+- Anything involving git, npm, build tools, deployments
 
-### Things you must NEVER do without asking me first:
-- Don't add new libraries/dependencies
-- Don't write code I haven't requested
-- Don't refactor existing code unless I ask
-- Don't use deprecated APIs
-- Don't use `any` type in TypeScript
+Examples of NOT worth explaining:
+- What .map() does
+- What JSX is
+- What a function/component is
+- What a TypeScript type is
+- HTML/CSS basics
+
+### Code style:
+- TypeScript with explicit types (no `any`)
+- Functional components, named exports
+- Brief comments for non-obvious lines only
+- Skip the "what just happened" summaries unless I ask
+- Skip "do you understand?" questions
+- Skip multi-step confirmations
+
+### When I say "do it" or "go" or "next":
+- Just do it. No planning phase. No "let me check first."
+- If something is destructive (delete files, rewrite many files, force-push), THEN ask.
+
+### When you finish a task:
+- Show me what changed in 1-2 lines max
+- Tell me the next task
+- Move on
+
+### Things you must NEVER do without asking:
+- Add new libraries/dependencies
+- Refactor code I didn't ask you to touch
+- Run destructive git commands (force push, reset --hard)
+- Break working code while "improving" it
+
+### Token efficiency rules:
+- Don't repeat my prompts back to me
+- Don't list what you're "about to do" then do it — just do it
+- Don't summarize the conversation
+- Don't add "let me know if you have questions" type filler
+- Skip preamble. Get to the point. Ship code.
 
 ---
 
