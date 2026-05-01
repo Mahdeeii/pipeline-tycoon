@@ -6,22 +6,22 @@ This file tracks project progress. Claude reads this at the start of every sessi
 Ship Pipeline Tycoon Lite in 6 weeks: a CI/CD puzzle game on a live URL.
 
 ## 📍 Current Phase
-**Phase 1: Foundation**
-Status: 🟡 In Progress
+**Phase 2: Canvas Setup**
+Status: 🔴 Not Started
 
 ## ✅ Completed Phases
-*(none yet)*
+- Phase 1: Foundation ✅
 
 ## 🛣️ All Phases (Roadmap)
 
-### Phase 1: Foundation 🏗️
+### Phase 1: Foundation 🏗️ ✅
 - [x] Install Node, VS Code, Claude Code extension
 - [x] Create Next.js project
 - [x] Set up GitHub with SSH separation
 - [x] Set up CLAUDE.md and docs folder
-- [ ] Build landing page (static)
-- [ ] Deploy to Vercel
-- [ ] Verify live URL works
+- [x] Build landing page (static)
+- [x] Deploy to Vercel
+- [x] Verify live URL works — https://pipeline-tycoon.vercel.app
 
 ### Phase 2: Canvas Setup 🎨
 - [ ] Install react-flow library
@@ -70,4 +70,9 @@ Status: 🟡 In Progress
 - [ ] Post on Twitter/Reddit/LinkedIn/HN
 
 ## 📝 Session Log
-*(Add entry after every session)*
+
+### 2026-05-01 — Session 1
+- Scaffolded Next.js 16 + TypeScript + Tailwind
+- Built dark-themed landing page with pipeline block preview
+- Deployed to https://pipeline-tycoon.vercel.app
+- Phase 1 complete → moving to Phase 2: Canvas Setup
